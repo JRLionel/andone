@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>蛙泳 10 次课 · 从怕水到连续 50 米</title>
+<meta name="description" content="以蛙泳为主线的零基础训练计划：6 个阶段、10 次课、每堂课的目标与达标线，附技术流程图、纠错表与水中自救流程。">
+<meta name="theme-color" content="#03171d">
+<link rel="preload" as="image" href="assets/swim/hero.jpg">
+<link rel="stylesheet" href="assets/css/swim.css">
+<script>if('IntersectionObserver' in window){document.documentElement.className+=' anim';}</script>
+</head>
+<body>
+
+<div class="progress"><i id="bar"></i></div>
+
+<!-- ══════════ 顶栏 ══════════ -->
+<header class="topbar">
+  <div class="topbar-in">
+    <a class="brand" href="#top">
+      <span class="brand-mark" aria-hidden="true"></span>
+      <span class="brand-txt">蛙泳十课<em>BREASTSTROKE 10</em></span>
+    </a>
+    <nav class="nav" aria-label="页面导航">
+      <a href="#overview">全景图</a>
+      <a href="#plan">训练计划</a>
+      <a href="#tech">技术流程</a>
+      <a href="#level">达标标尺</a>
+      <a href="#safety">安全自救</a>
+      <a href="#gear">装备</a>
+      <a href="#check">自检</a>
+    </nav>
+    <a class="top-cta" href="#l01">开始第 1 课</a>
+  </div>
+</header>
+
+<!-- ══════════ 首屏 ══════════ -->
+<section class="hero" id="top">
+  <div class="hero-bg">
+    <img src="assets/swim/hero.jpg" alt="泳者在泳池中抬头换气的瞬间" fetchpriority="high">
+  </div>
+  <div class="hero-in">
+    <span class="eyebrow">蛙泳专项 · 零基础自学</span>
+    <h1>10 次课，把蛙泳<br><em>游成自己的</em></h1>
+    <p class="hero-lede">
+      不是「多下水就会」，而是每次课只解决一件事。<br>
+      先看清整条路线，再从第 1 课下水。
+    </p>
+    <span class="hero-rule">每课都有达标线 · 做不到就不往下走</span>
+    <div class="hero-facts">
+      <div class="fact"><b>10<i>次</i></b><span>完整课程</span></div>
+      <div class="fact"><b>6<i>阶段</i></b><span>逐级解锁</span></div>
+      <div class="fact"><b>50<i>米</i></b><span>结课目标</span></div>
+      <div class="fact"><b>3.5<i>周</i></b><span>每周 2–3 次</span></div>
+    </div>
+    <div class="hero-acts">
+      <a class="btn btn-pri" href="#overview">先看全景图</a>
+      <a class="btn btn-ghost" href="#plan">直接看 10 次课</a>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ 全景图（全貌） ══════════ -->
+<div class="board-wrap" id="overview">
+  <div class="board">
+    <div class="board-head">
+      <div class="board-title">
+        <h2>全景图 · 这条路有多长</h2>
+        <span>6 个阶段 / 10 次课 / 1 个终点</span>
+      </div>
+      <div class="board-stat">
+        <span>已完成</span>
+        <b><span id="ov-done">0</span> / 10</b>
+        <span class="board-bar"><i id="ov-bar"></i></span>
+      </div>
+    </div>
+
+    <!-- 主流程图 -->
+    <div class="flow">
+      <div class="flow-cap">学习流程 · 每段箭头都是一道闸门</div>
+      <ol class="flow-track">
+        <li class="fnode" data-st="A">
+          <span class="fnode-k">0</span>
+          <h4>熟悉水性</h4>
+          <p>脸埋水吐气 10 秒，水中行走 25 米</p>
+          <span class="fnode-tag">第 1 课</span>
+          <span class="farrow" aria-hidden="true"></span>
+        </li>
+        <li class="fnode" data-st="A">
+          <span class="fnode-k">1</span>
+          <h4>漂浮与站立</h4>
+          <p>俯漂 30 秒，能自己站起</p>
+          <span class="fnode-tag">第 2 课</span>
+          <span class="farrow" aria-hidden="true"></span>
+        </li>
+        <li class="fnode" data-st="B">
+          <span class="fnode-k">2</span>
+          <h4>蛙泳腿</h4>
+          <p>收 · 翻 · 蹬 · 夹，扶板 15 米</p>
+          <span class="fnode-tag">第 3–4 课</span>
+          <span class="farrow" aria-hidden="true"></span>
+        </li>
+        <li class="fnode" data-st="C">
+          <span class="fnode-k">3</span>
+          <h4>划手与呼吸</h4>
+          <p>划手抬头吸，伸手低头吐</p>
+          <span class="fnode-tag">第 5 课</span>
+          <span class="farrow" aria-hidden="true"></span>
+        </li>
+        <li class="fnode" data-st="D">
+          <span class="fnode-k">4</span>
+          <h4>完整配合</h4>
+          <p>连续 25 米，动作不变形</p>
+          <span class="fnode-tag">第 6–8 课</span>
+          <span class="farrow" aria-hidden="true"></span>
+        </li>
+        <li class="fnode" data-st="E">
+          <span class="fnode-k">5</span>
+          <h4>耐力与安全</h4>
+          <p>50 米达标 + 踩水 30 秒</p>
+          <span class="fnode-tag">第 9–10 课</span>
+        </li>
+      </ol>
+      <div class="flow-loop">
+        <span class="fl-line" aria-hidden="true"></span>
+        <span class="fl-txt">没达标 → 重复这一课，不要跳到下一课</span>
+      </div>
+    </div>
+
+    <!-- 课次映射 -->
+    <div class="lmap-block">
+      <div class="lmap-head">
+        <h3>10 次课落在哪一段</h3>
+        <div class="lmap-legend">
+          <span><i style="background:var(--s-a)"></i>水性 · 漂浮</span>
+          <span><i style="background:var(--s-b)"></i>蛙泳腿</span>
+          <span><i style="background:var(--s-c)"></i>划手 · 呼吸</span>
+          <span><i style="background:var(--s-d)"></i>完整配合</span>
+          <span><i style="background:var(--s-e)"></i>耐力 · 安全</span>
+        </div>
+      </div>
+      <div class="lmap" id="lmap">
+        <button class="lcell" data-lesson="01" data-st="A"><b>01</b><span>熟悉水性</span></button>
+        <button class="lcell" data-lesson="02" data-st="A"><b>02</b><span>漂浮站立</span></button>
+        <button class="lcell" data-lesson="03" data-st="B"><b>03</b><span>收翻蹬夹</span></button>
+        <button class="lcell" data-lesson="04" data-st="B"><b>04</b><span>腿的巩固</span></button>
+        <button class="lcell" data-lesson="05" data-st="C"><b>05</b><span>划手呼吸</span></button>
+        <button class="lcell" data-lesson="06" data-st="D"><b>06</b><span>手腿配合</span></button>
+        <button class="lcell" data-lesson="07" data-st="D"><b>07</b><span>25 米</span></button>
+        <button class="lcell" data-lesson="08" data-st="D"><b>08</b><span>纠错定型</span></button>
+        <button class="lcell" data-lesson="09" data-st="E"><b>09</b><span>50 米</span></button>
+        <button class="lcell" data-lesson="10" data-st="E"><b>10</b><span>安全结课</span></button>
+      </div>
+    </div>
+
+    <!-- 里程碑 -->
+    <div class="miles">
+      <div class="mile">
+        <span class="mile-k">4</span>
+        <div><b>第 4 课 · 独立蹬腿 15 米</b><span>蛙泳的推进力有 70% 来自腿，这一关过了才算入门。</span></div>
+      </div>
+      <div class="mile">
+        <span class="mile-k">7</span>
+        <div><b>第 7 课 · 连续 25 米</b><span>第一次把手、腿、呼吸连成一条线。</span></div>
+      </div>
+      <div class="mile">
+        <span class="mile-k">10</span>
+        <div><b>第 10 课 · 50 米 + 踩水 30 秒</b><span>结课看的不是速度，是能不能自己回到岸边。</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<p class="src" style="max-width:var(--maxw);margin:12px auto 0;padding:0 22px">
+  怎么用这一页：先在图上找到你现在的位置 → 打开对应课次 → 这次下水只练那一件事。
+</p>
+
+<main>
+
+<!-- ══════════ 01 训练计划 ══════════ -->
+<section class="sec" id="plan">
+  <div class="sec-head"><span class="sec-num">01</span><h2>10 次课训练计划</h2></div>
+  <p class="sec-lede">
+    每周 2–3 次、每次 45–60 分钟，10 次课是一个闭环。每张卡片都写清四件事：
+    <b>这次练什么、练多久、做到什么算过、最容易错在哪</b>。右上角可以打卡，全景图会同步。
+  </p>
+
+  <div class="plan-tools">
+    <div class="chips" id="plan-filter" role="group" aria-label="按阶段筛选课次">
+      <button class="chip on" data-f="all">全部<i>10</i></button>
+      <button class="chip" data-f="A">水性 · 漂浮<i>2</i></button>
+      <button class="chip" data-f="B">蛙泳腿<i>2</i></button>
+      <button class="chip" data-f="C">划手 · 呼吸<i>1</i></button>
+      <button class="chip" data-f="D">完整配合<i>3</i></button>
+      <button class="chip" data-f="E">耐力 · 安全<i>2</i></button>
+    </div>
+    <button class="tool-link" id="expand-all">展开全部</button>
+  </div>
+
+  <div class="plan-list" id="plan-list">
+
+    <details class="lesson" id="l01" data-lesson="01" data-stage="A" open>
+      <summary>
+        <span class="ls-no">01<em>LESSON</em></span>
+        <span class="ls-main">
+          <span class="ls-title"><h4>熟悉水性</h4><span class="ls-stage" data-st="A">阶段 0</span></span>
+          <span class="ls-goal">目标：脸埋水吐气 10 秒 · 水中行走 25 米不扶边</span>
+        </span>
+        <span class="ls-meta">50 分钟</span>
+        <button class="ls-done" type="button" aria-label="标记第 1 课完成" title="标记完成">✓</button>
+      <span class="ls-arw" aria-hidden="true"></span>
+      </summary>
+      <div class="lesson-body">
+        <div class="lb-grid">
+          <div>
+            <h5>本次内容</h5>
+            <ul class="lb-list">
+              <li>扶边行走、水中行走各 2 趟（水深到腰）</li>
+              <li>陆上呼吸模仿 20 次 → 水中憋气、吐气 10 组</li>
+              <li>抱膝浮体 5 次，感受水的浮力</li>
+            </ul>
+          </div>
+          <div>
+            <h5>达标线</h5>
+            <div class="lb-pass">连续 <b>20 次</b>「水上吸、水下吐」不呛，脸埋水能停 <b>10 秒</b>。</div>
+            <div class="lb-tip"><span>注意</span><div>第一次课唯一的目标是把恐慌降下来。允许自己只做「脸碰水」，做 20 次也算成功。</div></div>
+          </div>
+        </div>
+        <div class="lb-bar">
+          <div class="tbar"><i style="flex:10">热身 10′</i><i style="flex:10">适应 10′</i><i style="flex:20">呼吸练习 20′</i><i style="flex:10">组合放松 10′</i></div>
+          <div class="tbar-cap"><span>共 <b>50</b> 分钟</span><span>最后 2 分钟：记录本次感受</span></div>
+        </div>
+      </div>
+    </details>
+
+    <details class="lesson" id="l02" data-lesson="02" data-stage="A">
+      <summary>
+        <span class="ls-no">02<em>LESSON</em></span>
+        <span class="ls-main">
+          <span class="ls-title"><h4>漂浮与站立</h4><span class="ls-stage" data-st="A">阶段 1</span></span>
+          <span class="ls-goal">目标：俯漂 10–30 秒 × 5 组，并且能自己站起</span>
+        </span>
+        <span class="ls-meta">50 分钟</span>
+        <button class="ls-done" type="button" aria-label="标记第 2 课完成" title="标记完成">✓</button>
+      <span class="ls-arw" aria-hidden="true"></span>
+      </summary>
+      <div class="lesson-body">
+        <div class="lb-grid">
+          <div>
+            <h5>本次内容</h5>
+            <ul class="lb-list">
+              <li>扶边俯漂 → 离边俯漂 5 秒起</li>
+              <li>超人漂（双臂夹耳）3 组 × 10 秒</li>
+              <li>站起三步：收膝 → 脚掌踩底 → 抬头</li>
+            </ul>
+          </div>
+          <div>
+            <h5>达标线</h5>
+            <div class="lb-pass">独立俯漂 <b>15 秒</b>，连续 <b>3 次</b>都能稳稳站起、不呛水。</div>
+            <div class="lb-tip"><span>注意</span><div>站不起来是怕，不是不会。先收膝再踩底，头最后抬——顺序反了就会慌。</div></div>
+          </div>
+        </div>
+        <div class="lb-bar">
+          <div class="tbar"><i style="flex:10">热身 10′</i><i style="flex:8">复习 8′</i><i style="flex:24">漂浮 24′</i><i style="flex:8">组合 8′</i></div>
+          <div class="tbar-cap"><span>共 <b>50</b> 分钟</span><span>水位：胸口以下</span></div>
+        </div>
+      </div>
+    </details>
+
+    <details class="lesson" id="l03" data-lesson="03" data-stage="B">
+      <summary>
+        <span class="ls-no">03<em>LESSON</em></span>
+        <span class="ls-main">
+          <span class="ls-title"><h4>蛙泳腿：收 · 翻 · 蹬 · 夹</h4><span class="ls-stage" data-st="B">阶段 2</span></span>
+          <span class="ls-goal">目标：能做出「翻脚」，扶板蹬腿 8–10 米</span>
+        </span>
+        <span class="ls-meta">50 分钟</span>
+        <button class="ls-done" type="button" aria-label="标记第 3 课完成" title="标记完成">✓</button>
+      <span class="ls-arw" aria-hidden="true"></span>
+      </summary>
+      <div class="lesson-body">
+        <div class="lb-grid">
+          <div>
+            <h5>本次内容</h5>
+            <ul class="lb-list">
+              <li>陆上「收—翻—蹬—夹」模仿 50 次</li>
+              <li>坐池边翻脚掌，保持 3 秒 × 10</li>
+              <li>扶边单腿分解 → 扶板蹬腿 8 米 × 4</li>
+            </ul>
+          </div>
+          <div>
+            <h5>达标线</h5>
+            <div class="lb-pass">翻脚能保持 <b>3 秒</b>不塌，扶板前进 <b>8 米</b>，每蹬一次能滑 1–2 秒。</div>
+            <div class="lb-tip"><span>注意</span><div>「翻脚」是蛙泳腿唯一的发力开关。做不出来就先别上板，反复练收与翻。</div></div>
+          </div>
+        </div>
+        <div class="lb-bar">
+          <div class="tbar"><i style="flex:10">热身 10′</i><i style="flex:8">复习 8′</i><i style="flex:26">腿分解 26′</i><i style="flex:6">放松 6′</i></div>
+          <div class="tbar-cap"><span>共 <b>50</b> 分钟</span><span>重点：脚掌外翻，不是脚背压水</span></div>
+        </div>
+      </div>
+    </details>
+
+    <details class="lesson" id="l04" data-lesson="04" data-stage="B">
+      <summary>
+        <span class="ls-no">04<em>LESSON</em></span>
+        <span class="ls-main">
+          <span class="ls-title"><h4>蛙泳腿巩固</h4><span class="ls-stage" data-st="B">阶段 2</span></span>
+          <span class="ls-goal">目标：扶板连续 15 米，每蹬一次滑 2 秒</span>
+        </span>
+        <span class="ls-meta">50 分钟</span>
+        <button class="ls-done" type="button" aria-label="标记第 4 课完成" title="标记完成">✓</button>
+      <span class="ls-arw" aria-hidden="true"></span>
+      </summary>
+      <div class="lesson-body">
+        <div class="lb-grid">
+          <div>
+            <h5>本次内容</h5>
+            <ul class="lb-list">
+              <li>蹬壁滑行 + 连续蛙泳腿</li>
+              <li>扶板 15 米 × 4 组，组间休息 45 秒</li>
+              <li>数「蹬—停」次数，而不是数距离</li>
+            </ul>
+          </div>
+          <div>
+            <h5>达标线</h5>
+            <div class="lb-pass">15 米全程不超过 <b>6 次</b>停顿，说明每一下都蹬满了。</div>
+            <div class="lb-tip"><span>注意</span><div>如果 15 米要停三次，问题不在腿力，而在<b>每一下都没滑完</b>。</div></div>
+          </div>
+        </div>
+        <div class="lb-bar">
+          <div class="tbar"><i style="flex:10">热身 10′</i><i style="flex:8">复习 8′</i><i style="flex:26">蹬腿 26′</i><i style="flex:6">放松 6′</i></div>
+          <div class="tbar-cap"><span>共 <b>50</b> 分钟</span><span>里程碑：独立蹬腿 15 米</span></div>
+        </div>
+      </div>
+    </details>
+
+    <details class="lesson" id="l05" data-lesson="05" data-stage="C">
+      <summary>
+        <span class="ls-no">05<em>LESSON</em></span>
+        <span class="ls-main">
+          <span class="ls-title"><h4>划手与呼吸</h4><span class="ls-stage" data-st="C">阶段 3</span></span>
+          <span class="ls-goal">目标：划手抬头吸、伸手低头吐，连续 10 次不呛</span>
+        </span>
+        <span class="ls-meta">55 分钟</span>
+        <button class="ls-done" type="button" aria-label="标记第 5 课完成" title="标记完成">✓</button>
+      <span class="ls-arw" aria-hidden="true"></span>
+      </summary>
+      <div class="lesson-body">
+        <div class="lb-grid">
+          <div>
+            <h5>本次内容</h5>
+            <ul class="lb-list">
+              <li>陆上划手三步模仿：外划 → 收手 → 前伸</li>
+              <li>站立水中划手 + 呼吸 20 次</li>
+              <li>扶边划手呼吸 → 划手 + 一次蹬腿</li>
+            </ul>
+          </div>
+          <div>
+            <h5>达标线</h5>
+            <div class="lb-pass">连续 <b>10 次</b>呼吸不呛，抬头时间不超过 <b>3 秒</b>。</div>
+            <div class="lb-tip"><span>注意</span><div>呼吸要跟手走：<b>手划开才抬头，手前伸就低头</b>。不要用手去配合呼吸。</div></div>
+          </div>
+        </div>
+        <div class="lb-bar">
+          <div class="tbar"><i style="flex:10">热身 10′</i><i style="flex:10">复习 10′</i><i style="flex:25">划手呼吸 25′</i><i style="flex:10">组合 10′</i></div>
+          <div class="tbar-cap"><span>共 <b>55</b> 分钟</span><span>水位：站立时肩露出水面</span></div>
+        </div>
+      </div>
+    </details>
+
+    <details class="lesson" id="l06" data-lesson="06" data-stage="D">
+      <summary>
+        <span class="ls-no">06<em>LESSON</em></span>
+        <span class="ls-main">
+          <span class="ls-title"><h4>手腿配合顺序</h4><span class="ls-stage" data-st="D">阶段 4</span></span>
+          <span class="ls-goal">目标：做出「划手腿不动，收手再收腿」的正确顺序</span>
+        </span>
+        <span class="ls-meta">55 分钟</span>
+        <button class="ls-done" type="button" aria-label="标记第 6 课完成" title="标记完成">✓</button>
+      <span class="ls-arw" aria-hidden="true"></span>
+      </summary>
+      <div class="lesson-body">
+        <div class="lb-grid">
+          <div>
+            <h5>本次内容</h5>
+            <ul class="lb-list">
+              <li>下水前默念口诀 3 遍</li>
+              <li>分解配合 10 米 × 4（划手时腿伸直）</li>
+              <li>两次腿一次手的节奏练习</li>
+            </ul>
+          </div>
+          <div>
+            <h5>达标线</h5>
+            <div class="lb-pass">连续 <b>10 米</b>顺序不错乱，没有出现同手同脚。</div>
+            <div class="lb-tip"><span>注意</span><div>宁可停 2 秒，也要把顺序做对——<b>慢是对的，快是错的</b>。</div></div>
+          </div>
+        </div>
+        <div class="lb-bar">
+          <div class="tbar"><i style="flex:10">热身 10′</i><i style="flex:10">复习 10′</i><i style="flex:25">配合 25′</i><i style="flex:10">组合 10′</i></div>
+          <div class="tbar-cap"><span>共 <b>55</b> 分钟</span><span>本课不追距离，只追顺序</span></div>
+        </div>
+      </div>
+    </details>
+
+    <details class="lesson" id="l07" data-lesson="07" data-stage="D">
+      <summary>
+        <span class="ls-no">07<em>LESSON</em></span>
+        <span class="ls-main">
+          <span class="ls-title"><h4>完整配合 25 米</h4><span class="ls-stage" data-st="D">阶段 4</span></span>
+          <span class="ls-goal">目标：一次动作一次呼吸，独立游完 25 米</span>
+        </span>
+        <span class="ls-meta">55 分钟</span>
+        <button class="ls-done" type="button" aria-label="标记第 7 课完成" title="标记完成">✓</button>
+      <span class="ls-arw" aria-hidden="true"></span>
+      </summary>
+      <div class="lesson-body">
+        <div class="lb-grid">
+          <div>
+            <h5>本次内容</h5>
+            <ul class="lb-list">
+              <li>10 米 × 4 → 15 米 × 3 → 25 米 × 1</li>
+              <li>每次休息到呼吸平稳再开始</li>
+              <li>请同伴录一段侧面视频，只看手臂路线</li>
+            </ul>
+          </div>
+          <div>
+            <h5>达标线</h5>
+            <div class="lb-pass"><b>25 米</b>不停、不扶边、不中途站起。</div>
+            <div class="lb-tip"><span>注意</span><div>第一次完整游会「很丑但很对」。<b>先要连贯，再要好看</b>，顺序反了就永远连不起来。</div></div>
+          </div>
+        </div>
+        <div class="lb-bar">
+          <div class="tbar"><i style="flex:10">热身 10′</i><i style="flex:10">复习 10′</i><i style="flex:25">距离 25′</i><i style="flex:10">放松 10′</i></div>
+          <div class="tbar-cap"><span>共 <b>55</b> 分钟</span><span>里程碑：连续 25 米</span></div>
+        </div>
+      </div>
+    </details>
+
+    <details class="lesson" id="l08" data-lesson="08" data-stage="D">
+      <summary>
+        <span class="ls-no">08<em>LESSON</em></span>
+        <span class="ls-main">
+          <span class="ls-title"><h4>动作定型与纠错</h4><span class="ls-stage" data-st="D">阶段 4</span></span>
+          <span class="ls-goal">目标：25 米动作不变形，划手次数下降</span>
+        </span>
+        <span class="ls-meta">55 分钟</span>
+        <button class="ls-done" type="button" aria-label="标记第 8 课完成" title="标记完成">✓</button>
+      <span class="ls-arw" aria-hidden="true"></span>
+      </summary>
+      <div class="lesson-body">
+        <div class="lb-grid">
+          <div>
+            <h5>本次内容</h5>
+            <ul class="lb-list">
+              <li>四项排查：蹬腿无力 / 划手过大 / 抬头过高 / 无滑行</li>
+              <li>每项单独练 8 分钟，其余全部停掉</li>
+              <li>25 米 × 3，记录每趟划手次数</li>
+            </ul>
+          </div>
+          <div>
+            <h5>达标线</h5>
+            <div class="lb-pass">25 米划手次数 <b>≤ 20 次</b>，节奏稳定不抢。</div>
+            <div class="lb-tip"><span>注意</span><div>一次只改一个问题。同时改四个，身体会回到原来的错误模式。</div></div>
+          </div>
+        </div>
+        <div class="lb-bar">
+          <div class="tbar"><i style="flex:10">热身 10′</i><i style="flex:12">复习 12′</i><i style="flex:22">单项纠正 22′</i><i style="flex:11">25 米 11′</i></div>
+          <div class="tbar-cap"><span>共 <b>55</b> 分钟</span><span>划手次数下降 = 效率提高，不是变慢</span></div>
+        </div>
+      </div>
+    </details>
+
+    <details class="lesson" id="l09" data-lesson="09" data-stage="E">
+      <summary>
+        <span class="ls-no">09<em>LESSON</em></span>
+        <span class="ls-main">
+          <span class="ls-title"><h4>耐力与 50 米</h4><span class="ls-stage" data-st="E">阶段 5</span></span>
+          <span class="ls-goal">目标：连续游完 50 米不休息</span>
+        </span>
+        <span class="ls-meta">60 分钟</span>
+        <button class="ls-done" type="button" aria-label="标记第 9 课完成" title="标记完成">✓</button>
+      <span class="ls-arw" aria-hidden="true"></span>
+      </summary>
+      <div class="lesson-body">
+        <div class="lb-grid">
+          <div>
+            <h5>本次内容</h5>
+            <ul class="lb-list">
+              <li>25 米 × 2 热身，专注节奏</li>
+              <li>50 米 × 2，中间休息 2 分钟</li>
+              <li>触壁与简易转身，不必练滚翻</li>
+            </ul>
+          </div>
+          <div>
+            <h5>达标线</h5>
+            <div class="lb-pass"><b>50 米</b>不停，前 25 米刻意放慢，后 25 米不掉速。</div>
+            <div class="lb-tip"><span>注意</span><div>50 米游不下来，90% 是<b>前 25 米太快</b>。把第一趟当热身，第二趟才是正事。</div></div>
+          </div>
+        </div>
+        <div class="lb-bar">
+          <div class="tbar"><i style="flex:12">热身 12′</i><i style="flex:12">复习 12′</i><i style="flex:24">50 米 24′</i><i style="flex:12">放松 12′</i></div>
+          <div class="tbar-cap"><span>共 <b>60</b> 分钟</span><span>里程碑：连续 50 米</span></div>
+        </div>
+      </div>
+    </details>
+
+    <details class="lesson" id="l10" data-lesson="10" data-stage="E">
+      <summary>
+        <span class="ls-no">10<em>LESSON</em></span>
+        <span class="ls-main">
+          <span class="ls-title"><h4>踩水与安全结课</h4><span class="ls-stage" data-st="E">阶段 5</span></span>
+          <span class="ls-goal">目标：50 米达标 + 深水区踩水 30 秒并靠岸</span>
+        </span>
+        <span class="ls-meta">55 分钟</span>
+        <button class="ls-done" type="button" aria-label="标记第 10 课完成" title="标记完成">✓</button>
+      <span class="ls-arw" aria-hidden="true"></span>
+      </summary>
+      <div class="lesson-body">
+        <div class="lb-grid">
+          <div>
+            <h5>本次内容</h5>
+            <ul class="lb-list">
+              <li>蛙式踩水 30 秒 × 3，逐步进入深水区</li>
+              <li>仰漂休息 + 摇橹手</li>
+              <li>50 米计时 1 次，制定下一个 4 周计划</li>
+            </ul>
+          </div>
+          <div>
+            <h5>达标线</h5>
+            <div class="lb-pass">深水区踩水 <b>30 秒</b>并自主靠岸；50 米不中断。</div>
+            <div class="lb-tip"><span>注意</span><div>结课时请确认这一件事：<b>在深水区能踩水并靠岸</b>。这比 50 米成绩重要得多。</div></div>
+          </div>
+        </div>
+        <div class="lb-bar">
+          <div class="tbar"><i style="flex:10">热身 10′</i><i style="flex:8">复习 8′</i><i style="flex:22">踩水 22′</i><i style="flex:15">50 米 15′</i></div>
+          <div class="tbar-cap"><span>共 <b>55</b> 分钟</span><span>结课标准：能自救 &gt; 游得快</span></div>
+        </div>
+      </div>
+    </details>
+
+  </div>
+
+  <div class="plan-foot">
+    <div class="note tip"><span class="ic">◷</span><div><b>每周节奏：</b>周一 / 周三 / 周六。隔一天，水感不退、动作不变形。</div></div>
+    <div class="note"><span class="ic">◎</span><div><b>单次结构：</b>热身 10′ → 复习 10′ → 主项 25′ → 组合 10′ → 放松 5′。</div></div>
+    <div class="note warn"><span class="ic">!</span><div><b>复习不能省：</b>那是动作定型发生的地方，跳过它等于每次从零开始。</div></div>
+  </div>
+</section>
+
+<!-- ══════════ 02 技术流程 ══════════ -->
+<section class="sec" id="tech">
+  <div class="sec-head"><span class="sec-num">02</span><h2>技术流程：把感觉拆成拍子</h2></div>
+  <p class="sec-lede">
+    动作学不会，通常不是悟性差，而是没人告诉你<b>先动哪、后动哪、动多久</b>。
+    这一节把蛙泳拆成四拍、一条呼吸时序，以及一张「练错在哪」的对照表。
+  </p>
+
+  <div class="tech-band rv">
+    <img src="assets/swim/stroke-breast.jpg" alt="蛙泳者抬头换气的瞬间，双臂外划" loading="lazy" style="object-position:50% 38%">
+    <div class="tb-in">
+      <h3>一个周期，只有四件事</h3>
+      <p>划手 → 收手收腿 → 蹬夹前伸 → 滑行。所有「游得累」，几乎都是把第四拍滑行省掉了。</p>
+    </div>
+  </div>
+
+  <h3 class="sub">① 四拍循环流程图</h3>
+  <p class="sub-note">默念口诀下水：<b>划手腿不动，收手再收腿，先伸胳膊后蹬腿，并拢伸直漂一会儿。</b></p>
+
+  <div class="cycle rv">
+    <ol class="cycle-track">
+      <li class="beat">
+        <span class="bn">01</span>
+        <div class="bt">划手</div>
+        <div class="bw">≈ 0.40 s</div>
+        <p>手掌外划到比肩略宽，抬头吸气。腿保持并拢伸直，一动不动。</p>
+        <div class="cue"><b>感觉：</b>用手把水「抱」到胸前，不是往后拍。</div>
+        <span class="farrow" aria-hidden="true"></span>
+      </li>
+      <li class="beat">
+        <span class="bn">02</span>
+        <div class="bt">收手 · 收腿</div>
+        <div class="bw">≈ 0.35 s</div>
+        <p>手肘向身体收拢的同时，脚跟向臀部收。此时头开始低下去。</p>
+        <div class="cue"><b>感觉：</b>把脚后跟「塞」到屁股下面。</div>
+        <span class="farrow" aria-hidden="true"></span>
+      </li>
+      <li class="beat">
+        <span class="bn">03</span>
+        <div class="bt">蹬夹 · 前伸</div>
+        <div class="bw">≈ 0.50 s</div>
+        <p>脚掌外翻，向后向外画弧再并拢；同时双臂向前伸直。</p>
+        <div class="cue"><b>感觉：</b>用脚掌「推一堵墙」，再夹紧。</div>
+        <span class="farrow" aria-hidden="true"></span>
+      </li>
+      <li class="beat">
+        <span class="bn">04</span>
+        <div class="bt">滑行</div>
+        <div class="bw">≈ 0.30 s</div>
+        <p>全身伸直，脸在水里，缓慢吐气。滑到明显减速再开始下一次。</p>
+        <div class="cue"><b>感觉：</b>数「一、二」，让身体自己往前走。</div>
+      </li>
+    </ol>
+    <div class="cycle-loop">
+      <span class="cl-line" aria-hidden="true"></span>
+      <span class="cl-txt">回到 ① 划手 · 一个完整周期约 1.2–1.5 秒</span>
+    </div>
+  </div>
+
+  <h3 class="sub">② 呼吸时序：什么时候抬头，抬多久</h3>
+  <p class="sub-note">蛙泳是「一次动作一次呼吸」。抬头只发生在划手的前半段，<b>嘴露出水面约 0.5 秒</b>，其余时间脸都在水里吐气。</p>
+
+  <div class="flowcard rv">
+    <div class="flowcard-head"><h4>一个划水周期的三段时序</h4><span>1.2–1.5 s</span></div>
+    <p>四列对应四拍，颜色越深表示该环节正在进行。</p>
+    <div class="rhythm">
+      <div class="rhythm-row">
+        <b>手臂</b>
+        <div class="rhythm-track"><i class="hi" style="flex:1">外划</i><i class="on" style="flex:1">收手</i><i class="on" style="flex:1">前伸</i><i class="off" style="flex:1">静止</i></div>
+      </div>
+      <div class="rhythm-row">
+        <b>头部</b>
+        <div class="rhythm-track"><i class="hi" style="flex:1">抬起头</i><i class="on" style="flex:1">低下去</i><i class="off" style="flex:1">水下</i><i class="off" style="flex:1">水下</i></div>
+      </div>
+      <div class="rhythm-row">
+        <b>呼吸</b>
+        <div class="rhythm-track"><i class="hi" style="flex:1">吸气</i><i class="on" style="flex:1">闭气</i><i class="on" style="flex:1">吐气</i><i class="off" style="flex:1">吐气</i></div>
+      </div>
+    </div>
+    <div class="tbar-cap" style="margin-top:12px">
+      <span>橙色 = 唯一的换气窗口，约 <b>0.5</b> 秒</span>
+      <span>水下必须把气吐完，抬头才吸得进</span>
+    </div>
+  </div>
+
+  <h3 class="sub">③ 一次训练怎么走</h3>
+  <p class="sub-note">每次下水都按同一条流程走，身体会形成「入水即进入状态」的条件反射。</p>
+
+  <div class="flowcard rv">
+    <div class="flowcard-head"><h4>单次训练流程图</h4><span>50–60 min</span></div>
+    <p>顺序不要调换：热身在前，复习在旧内容之后、新内容之前。</p>
+    <ol class="pipe pipe-5">
+      <li class="pstep"><span class="k">01</span><span class="pt">10′</span><h5>陆上热身</h5><p>关节活动 + 走到微微出汗</p><span class="farrow" aria-hidden="true"></span></li>
+      <li class="pstep"><span class="k">02</span><span class="pt">5′</span><h5>入水适应</h5><p>浅水行走，脸埋水吐气 10 次</p><span class="farrow" aria-hidden="true"></span></li>
+      <li class="pstep"><span class="k">03</span><span class="pt">10′</span><h5>复习上次</h5><p>只做上一课的达标动作</p><span class="farrow" aria-hidden="true"></span></li>
+      <li class="pstep"><span class="k">04</span><span class="pt">25′</span><h5>本次主项</h5><p>只练一个新动作，分组做</p><span class="farrow" aria-hidden="true"></span></li>
+      <li class="pstep"><span class="k">05</span><span class="pt">5′</span><h5>组合 + 放松</h5><p>把新旧串起来，记录感受</p></li>
+    </ol>
+    <div class="tbar" style="margin-top:18px">
+      <i style="flex:10">热身 10′</i><i style="flex:5">适应 5′</i><i style="flex:10">复习 10′</i><i style="flex:25">主项 25′</i><i style="flex:5">放松 5′</i>
+    </div>
+    <div class="tbar-cap"><span>共 <b>55</b> 分钟 · 主项占 45%</span><span>如果只剩 30 分钟：砍主项，不要砍复习</span></div>
+  </div>
+
+  <h3 class="sub">④ 常见错误对照表</h3>
+  <p class="sub-note">对照「表现」找自己的问题，只改一条，改完再改下一条。</p>
+
+  <div class="err-grid rv">
+    <div class="err-row head"><div>表现</div><div>真实原因</div><div>纠正方法</div></div>
+    <div class="err-row"><div>同手同脚，原地不动</div><div>划手的同时蹬腿，两个力互相抵消</div><div>默念口诀；扶板蹬腿后<b>强停 2 秒</b>再划手</div></div>
+    <div class="err-row"><div>蹬腿没有推力</div><div>不翻脚掌，用脚背切水，等于用刀背推东西</div><div>陆上翻脚保持 10 秒 × 10；先只练「收 → 翻」</div></div>
+    <div class="err-row"><div>一抬头腿就沉</div><div>抬头过高 + 塌腰，杠杆把髋部压下去</div><div>下巴微收，眼睛看斜前下方 45°；超人漂 10 秒 × 5</div></div>
+    <div class="err-row"><div>游 25 米就喘</div><div>水下没吐净，肺里一直是废气</div><div>扶边韵律呼吸 30 次 × 3，只练「水下吐完」</div></div>
+    <div class="err-row"><div>换气呛水</div><div>在水面上又吐又吸，或用鼻子吸气</div><div>出水先「啪」一声破水，再<b>只吸不吐</b></div></div>
+    <div class="err-row"><div>动作越游越碎</div><div>省掉了滑行，频率代替了效率</div><div>每次蹬完数「一、二」；记录 25 米划手次数</div></div>
+  </div>
+
+  <h3 class="sub">⑤ 卡住了？照这条流程诊断</h3>
+  <p class="sub-note">先定位症状，再看根因，最后只执行一条处方。三条同时改，身体会退回原来的错误模式。</p>
+
+  <div class="flowcard rv">
+    <div class="dxflow">
+      <div class="dxrow">
+        <div class="dx-sym">25 米就喘到不行<em>体能问题？</em></div>
+        <div class="dx-ar" aria-hidden="true">→</div>
+        <div class="dx-cause">水下没吐净，肺里始终是废气</div>
+        <div class="dx-ar" aria-hidden="true">→</div>
+        <div class="dx-fix">扶边韵律呼吸 <b>30 次 × 3 组</b>，只练「吐完」</div>
+      </div>
+      <div class="dxrow">
+        <div class="dx-sym">一换气就呛<em>动作问题？</em></div>
+        <div class="dx-ar" aria-hidden="true">→</div>
+        <div class="dx-cause">水面又吐又吸，或用鼻子吸气</div>
+        <div class="dx-ar" aria-hidden="true">→</div>
+        <div class="dx-fix">出水「啪」一声破水，<b>只吸不吐</b></div>
+      </div>
+      <div class="dxrow">
+        <div class="dx-sym">腿怎么都往下沉<em>腿没力？</em></div>
+        <div class="dx-ar" aria-hidden="true">→</div>
+        <div class="dx-cause">抬头看前方 + 塌腰，杠杆压住髋部</div>
+        <div class="dx-ar" aria-hidden="true">→</div>
+        <div class="dx-fix">低头看池底，<b>超人漂 10–30 秒 × 5</b></div>
+      </div>
+      <div class="dxrow">
+        <div class="dx-sym">手脚乱、原地不动<em>协调差？</em></div>
+        <div class="dx-ar" aria-hidden="true">→</div>
+        <div class="dx-cause">同手同脚，推进力互相抵消</div>
+        <div class="dx-ar" aria-hidden="true">→</div>
+        <div class="dx-fix">扶板蹬腿后<b>强停 2 秒</b>再划手</div>
+      </div>
+      <div class="dxrow">
+        <div class="dx-sym">蹬腿像踩空<em>力量不够？</em></div>
+        <div class="dx-ar" aria-hidden="true">→</div>
+        <div class="dx-cause">不翻脚掌，用脚背切水</div>
+        <div class="dx-ar" aria-hidden="true">→</div>
+        <div class="dx-fix">陆上翻脚保持 <b>10 秒 × 10 次</b></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="note tip" style="margin-top:16px">
+    <span class="ic">◎</span>
+    <div><b>记这一句就够：</b>「划手腿不动，收手再收腿，先伸胳膊后蹬腿，并拢伸直漂一会儿。」——所有配合错误，都是这四句里漏了一句。</div>
+  </div>
+</section>
+
+<!-- ══════════ 03 达标标尺 ══════════ -->
+<section class="sec" id="level">
+  <div class="sec-head"><span class="sec-num">03</span><h2>达标标尺：把「学会」变成可测量</h2></div>
+  <p class="sec-lede">
+    自学最大的问题是没有裁判——不知道自己练到哪了。这里放两把公开的尺子：
+    一把是能力分级，一把是大众游泳的达标时间。
+  </p>
+
+  <div class="level-callout rv">
+    <div class="lc-num">1:30<em>50 米蛙泳</em></div>
+    <div>
+      <p><b>业余四级（绿海豚）＝ 普通成年人认真练 2–3 个月的现实目标。</b>
+      它不是天赋线，而是每周下水 2–3 次、按计划练的结果。先盯这一档。</p>
+    </div>
+  </div>
+
+  <div class="tw rv">
+    <table>
+      <thead>
+        <tr><th style="width:58px">等级</th><th>技能测评项</th><th>泳姿要求</th><th style="width:112px">对应本文</th></tr>
+      </thead>
+      <tbody>
+        <tr><td class="td-b">一级</td><td>5 米漂浮滑行，途中不抬头换气</td><td>连续 25 米蛙泳</td><td><span class="tagm">第 5–7 课</span></td></tr>
+        <tr><td class="td-b">二级</td><td>水中翻转：俯卧翻成仰卧并保持 10 秒</td><td>连续 50 米蛙泳</td><td><span class="tagm">第 9 课</span></td></tr>
+        <tr><td class="td-b">三级</td><td>水中拾物：头部没入水中完成拾取</td><td>连续 100 米蛙泳</td><td><span class="tagm">结课后</span></td></tr>
+        <tr><td class="td-b">四级</td><td>踩水：头部露出水面连续 15 秒</td><td>200 米蛙泳 + 25 米爬泳</td><td><span class="tagm">第 10 课 + 进阶</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="src">依据：GB/T 44098—2024《游泳课程学生运动能力测评规范》。五、六级另含潜泳 15 米与计时要项，入门阶段不必追。</p>
+
+  <h3 class="sub">大众游泳锻炼等级 · 成人 50 米蛙泳</h3>
+  <div class="tw rv" style="margin-top:10px">
+    <table>
+      <thead><tr><th>级别</th><th>证章</th><th class="num">男子 50 m</th><th class="num">女子 50 m</th><th>说明</th></tr></thead>
+      <tbody>
+        <tr><td class="td-b">一级</td><td>金海豚</td><td class="num">00:50.00</td><td class="num">01:10.00</td><td>接近业余上限，需要系统训练</td></tr>
+        <tr><td class="td-b">二级</td><td>银海豚</td><td class="num">00:58.00</td><td class="num">01:20.00</td><td>动作效率高，能连续多组</td></tr>
+        <tr><td class="td-b">三级</td><td>粉海豚</td><td class="num">01:10.00</td><td class="num">01:30.00</td><td>节奏稳定、滑行充分</td></tr>
+        <tr><td class="td-b">四级</td><td>绿海豚</td><td class="num">01:30.00</td><td class="num">01:40.00</td><td><b>2–3 个月的现实目标</b></td></tr>
+        <tr><td class="td-b">五级</td><td>蓝海豚</td><td class="num" colspan="2" style="text-align:center">不限泳姿，02:30 内连续游完 50 米</td><td>完成本文六阶段即可</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="src">依据：《全国游泳锻炼等级标准》（国家体育总局颁布）。实际考核以当地泳馆公布为准。</p>
+</section>
+
+<!-- ══════════ 04 安全自救 ══════════ -->
+<section class="sec" id="safety">
+  <div class="sec-head"><span class="sec-num">04</span><h2>安全与水中自救</h2></div>
+  <p class="sec-lede">
+    这一节可能永远用不上；但用上的那一次，它决定的是能不能自己走回岸上。
+    <b>建议在学泳姿之前就先读一遍。</b>
+  </p>
+
+  <div class="band rv">
+    <img src="assets/swim/openwater.jpg" alt="开放水域中一名泳者独自游向远方" loading="lazy">
+    <blockquote>
+      真正危险的不是水，是慌。<br>
+      慌 → 挣扎 → 呛水 → 耗尽体力，<br>
+      这才是那条致命的链条。
+      <small>抽筋时先记住一件事：你能浮起来，慢慢来。</small>
+    </blockquote>
+  </div>
+
+  <h3 class="sub">① 抽筋自救流程图</h3>
+  <p class="sub-note">处理顺序永远是：<b>先让自己浮起来，再处理抽筋</b>。顺序反了，越拉越沉。</p>
+
+  <div class="flowcard rv">
+    <ol class="pipe pipe-5">
+      <li class="pstep red"><span class="k">01</span><h5>立刻停止发力</h5><p>不要再蹬、不要再划，先别挣扎</p><span class="farrow" aria-hidden="true"></span></li>
+      <li class="pstep amber"><span class="k">02</span><h5>改成仰漂</h5><p>后脑贴水、双手张开、肺里留气</p><span class="farrow" aria-hidden="true"></span></li>
+      <li class="pstep"><span class="k">03</span><h5>判断部位</h5><p>小腿 / 脚趾 / 手指 / 腹部</p><span class="farrow" aria-hidden="true"></span></li>
+      <li class="pstep"><span class="k">04</span><h5>反向拉伸</h5><p>抓脚尖向身体拉，压膝伸直</p><span class="farrow" aria-hidden="true"></span></li>
+      <li class="pstep"><span class="k">05</span><h5>靠岸结束</h5><p>缓解后慢慢游向岸边，本场不再加量</p></li>
+    </ol>
+    <div class="tbar" style="margin-top:18px">
+      <i style="flex:1">停止发力</i><i style="flex:1.2">仰漂</i><i style="flex:1.6">拉伸 15–20″</i><i style="flex:1">靠岸休息</i>
+    </div>
+    <div class="tbar-cap"><span>拉伸时长：小腿 15–20 秒 · 脚趾 10–15 秒</span><span>同一块肌肉 24 小时内易二次抽筋</span></div>
+  </div>
+
+  <h3 class="sub">② 发现有人溺水：岸上四步，绝不下水</h3>
+  <p class="sub-note">真实溺水通常<b>安静、无扑腾</b>。看到有人呆立水中、头后仰、眼神发直，立刻呼叫救生员。</p>
+
+  <ol class="pipe pipe-4 rv" style="margin-top:4px">
+    <li class="pstep red"><span class="k">STEP 1</span><h5>呼叫</h5><p>大声喊「有人溺水」，指定一人打 120、一人找救生员</p><span class="farrow" aria-hidden="true"></span></li>
+    <li class="pstep"><span class="k">STEP 2</span><h5>递物</h5><p>伸救生杆、竹竿、毛巾。趴低身体，避免被拉下水</p><span class="farrow" aria-hidden="true"></span></li>
+    <li class="pstep"><span class="k">STEP 3</span><h5>抛掷</h5><p>抛救生圈、浮板、空水桶，让对方抱住再往岸边拖</p><span class="farrow" aria-hidden="true"></span></li>
+    <li class="pstep amber"><span class="k">STEP 4</span><h5>上岸后</h5><p>无呼吸立即 CPR 并取 AED。<b>不要控水、不要倒挂</b></p></li>
+  </ol>
+
+  <h3 class="sub">③ 抽筋处理对照表</h3>
+  <div class="tw rv" style="margin-top:4px">
+    <table>
+      <thead><tr><th style="width:76px">部位</th><th>立即动作</th><th style="width:104px">持续</th><th>之后怎么办</th></tr></thead>
+      <tbody>
+        <tr><td class="td-b">小腿</td><td>一手抓脚尖向身体拉，另一手压膝盖让腿伸直</td><td class="num">15–20 秒</td><td>改仰漂休息，缓慢蹬腿确认缓解</td></tr>
+        <tr><td class="td-b">脚趾</td><td>用手扳住脚趾，向小腿方向拉开</td><td class="num">10–15 秒</td><td>轻活动踝关节，不要立刻发力蹬水</td></tr>
+        <tr><td class="td-b">手指</td><td>反复握拳、张开，甩动手腕</td><td class="num">5–6 次</td><td>改仰泳或蛙泳，减少抓水发力</td></tr>
+        <tr><td class="td-b">腹部</td><td>仰漂、双腿伸展，缓慢深呼吸</td><td class="num">至缓解</td><td>就近靠岸休息，本场结束</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3 class="sub">④ 踩水：比「会游 50 米」更重要</h3>
+  <p class="sub-note">踩水的本质不是「保持不动」，而是<b>用手掌持续制造向下的支撑</b>。四种方式，从最省力到最灵活。</p>
+  <div class="grid g2 rv">
+    <div class="beat"><div class="bt">蛙式踩水</div><p>最省力、最推荐先学。双腿做小幅蛙泳腿，手掌在体前「按压」，节奏慢而稳。</p></div>
+    <div class="beat"><div class="bt">剪式踩水</div><p>双腿交替前后剪动，像走路。适合长时间停留，需要一点平衡感。</p></div>
+    <div class="beat"><div class="bt">摇橹手</div><p>手掌在水下画横向的「8」字，靠手掌角度变化产生升力。这是所有踩水的核心手感。</p></div>
+    <div class="beat"><div class="bt">仰漂休息</div><p>不是踩水，但更重要：后脑贴水、双臂张开、肺里留气。体力耗尽时它能救你一命。</p></div>
+  </div>
+
+  <div class="note warn" style="margin-top:16px">
+    <span class="ic">!</span>
+    <div><b>自然水域三条铁律：</b>遇离岸流不要逆流游，平行岸边游出水流带再斜向靠岸；不酒后下水；看到有人呆立水中、无声无息，立即呼叫救生员。</div>
+  </div>
+</section>
+
+<!-- ══════════ 05 装备 ══════════ -->
+<section class="sec" id="gear">
+  <div class="sec-head"><span class="sec-num">05</span><h2>装备：只需要五样</h2></div>
+  <p class="sec-lede">
+    装备的作用是<b>降低入门阻力</b>，不是提升成绩。前期不需要脚蹼、划手掌、呼吸管，那些是进阶工具。
+  </p>
+
+  <div class="grid g3 rv">
+    <div class="gear">
+      <img src="assets/swim/gear-goggles.jpg" alt="泳者在池边调整泳镜" loading="lazy" style="object-position:50% 24%">
+      <div class="gear-in"><h4>泳镜</h4><p>选带硅胶垫圈、可调鼻桥的款式。能看清池底，才敢把头低下去。</p></div>
+    </div>
+    <div class="gear">
+      <img src="assets/swim/gear-cap.jpg" alt="泳帽与泳镜放在池边" loading="lazy">
+      <div class="gear-in"><h4>泳帽</h4><p>硅胶帽不勒头、减少阻力，也保护头发不被氯损伤。</p></div>
+    </div>
+    <div class="gear">
+      <img src="assets/swim/gear-detail.jpg" alt="泳池边的训练装备细节" loading="lazy">
+      <div class="gear-in"><h4>浮板 + 背漂</h4><p>浮板练腿、背漂找身体位置。第 1–4 课的主力工具。</p></div>
+    </div>
+  </div>
+
+  <div class="tw rv" style="margin-top:16px">
+    <table>
+      <thead><tr><th style="width:112px">装备</th><th>怎么选</th><th style="width:150px">什么时候用</th></tr></thead>
+      <tbody>
+        <tr><td class="td-b">泳镜</td><td>垫圈柔软、不漏水；近视可选带度数款（比日常低 50 度）</td><td>全程</td></tr>
+        <tr><td class="td-b">泳帽</td><td>硅胶优于布帽；长发选加大款</td><td>全程</td></tr>
+        <tr><td class="td-b">浮板</td><td>A 字板或方板皆可，硬度适中</td><td>第 3–5 课练腿</td></tr>
+        <tr><td class="td-b">背漂</td><td>可拆片式，方便逐片减少</td><td>第 2–6 课找平衡</td></tr>
+        <tr><td class="td-b">耳塞 / 鼻夹</td><td>非必需。鼻夹长期用会妨碍吐气练习</td><td>仅耳道敏感者</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- ══════════ 06 自检 ══════════ -->
+<section class="sec" id="check">
+  <div class="sec-head"><span class="sec-num">06</span><h2>结课自检：12 项都会，才算真的会</h2></div>
+  <p class="sec-lede">勾选会保存在本机，下次打开还在。少于 10 项，说明还有一课没过——回到全景图找对应阶段。</p>
+
+  <div class="check rv">
+    <div class="check-top">
+      <h3>我的完成度</h3>
+      <span class="cnt"><b id="ck-done">0</b> / <span id="ck-total">12</span></span>
+      <button id="ck-reset" type="button">重置</button>
+      <div class="bar"><i id="ck-bar"></i></div>
+    </div>
+    <div class="check-grid" id="check-grid">
+      <label class="ck"><input type="checkbox" data-ck="1"><span>能脸埋水吐气 10 秒而不慌</span></label>
+      <label class="ck"><input type="checkbox" data-ck="2"><span>俯漂 15 秒，并能自己稳稳站起</span></label>
+      <label class="ck"><input type="checkbox" data-ck="3"><span>扶板蛙泳腿连续 15 米不停</span></label>
+      <label class="ck"><input type="checkbox" data-ck="4"><span>每次蹬腿都能翻脚掌</span></label>
+      <label class="ck"><input type="checkbox" data-ck="5"><span>划手抬头吸气，连续 10 次不呛</span></label>
+      <label class="ck"><input type="checkbox" data-ck="6"><span>水下能把气吐净再抬头</span></label>
+      <label class="ck"><input type="checkbox" data-ck="7"><span>记得住「划手腿不动，收手再收腿」</span></label>
+      <label class="ck"><input type="checkbox" data-ck="8"><span>25 米动作不变形，划手 ≤ 20 次</span></label>
+      <label class="ck"><input type="checkbox" data-ck="9"><span>连续游完 50 米不中断</span></label>
+      <label class="ck"><input type="checkbox" data-ck="10"><span>深水区踩水 30 秒并自主靠岸</span></label>
+      <label class="ck"><input type="checkbox" data-ck="11"><span>会仰漂休息，能恢复呼吸</span></label>
+      <label class="ck"><input type="checkbox" data-ck="12"><span>知道抽筋要先浮起来再拉伸</span></label>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ 07 FAQ ══════════ -->
+<section class="sec" id="faq">
+  <div class="sec-head"><span class="sec-num">07</span><h2>常见问题</h2></div>
+
+  <div class="faq rv">
+    <details open>
+      <summary><span class="q">Q</span>完全不会游泳，几岁开始合适？<span class="ar"></span></summary>
+      <div class="ans">成人任何年龄都可以开始，40 岁、50 岁学成的案例很多。儿童一般 5–6 岁能听懂指令后开始更高效；成人最大的障碍不是身体，而是<b>对水的恐惧</b>，所以第 1–2 课要允许自己「只玩水不练动作」。</div>
+    </details>
+    <details>
+      <summary><span class="q">Q</span>一定要请教练吗？<span class="ar"></span></summary>
+      <div class="ans">不是必需，但<b>前 2 次课有人看着最划算</b>：一是安全，二是「翻脚」「低头」这类动作自己看不见。之后按这份计划自学完全可行，关键是每课只练一个点，并且拍视频自查。</div>
+    </details>
+    <details>
+      <summary><span class="q">Q</span>两次课之间隔多久？<span class="ar"></span></summary>
+      <div class="ans">隔 1–2 天最好，每周 2–3 次。间隔超过一周，水感会明显退；天天练则容易疲劳、动作变形。<b>宁可少练一次，也不要带着疲劳下水。</b></div>
+    </details>
+    <details>
+      <summary><span class="q">Q</span>为什么先学蛙泳，而不是自由泳？<span class="ar"></span></summary>
+      <div class="ans">因为蛙泳<b>抬头就能呼吸</b>，随时能停、能站，心理成本最低；动作节奏慢，适合把呼吸与滑行一次练透。自由泳换气门槛更高，放在蛙泳之后学，成功率明显更高。</div>
+    </details>
+    <details>
+      <summary><span class="q">Q</span>耳朵进水、鼻子呛水怎么办？<span class="ar"></span></summary>
+      <div class="ans">耳朵进水：头侧向进水一侧，单脚跳几下，或用手掌压耳后快速松开。呛水：<b>先停、扶边、咳出来</b>，不要慌着继续游；呛水后先做 5 次慢呼吸再下水。</div>
+    </details>
+    <details>
+      <summary><span class="q">Q</span>感冒、例假能不能下水？<span class="ar"></span></summary>
+      <div class="ans">感冒、发热、腹泻期间<b>一律不下水</b>，既影响恢复也可能传染他人。例假期间可用卫生棉条并降低强度，但是否下水以个人身体状况为准，不必勉强。</div>
+    </details>
+    <details>
+      <summary><span class="q">Q</span>多久能游完 50 米？<span class="ar"></span></summary>
+      <div class="ans">按每周 2–3 次、每次 45–60 分钟执行，<b>大多数人 8–12 次课</b>能连续游完 50 米；协调性差一点或怕水重一些，可能需要 15 次。判断标准不是次数，而是第 4 课的「独立蹬腿 15 米」有没有过。</div>
+    </details>
+    <details>
+      <summary><span class="q">Q</span>游完肩膀、脖子疼正常吗？<span class="ar"></span></summary>
+      <div class="ans">轻微酸胀正常，<b>刺痛、抬手受限就不正常</b>。蛙泳常见原因是划手过宽、抬头过高；先减量，再改动作，不要靠拉伸硬扛。持续疼痛请就医。</div>
+    </details>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="foot-in">
+    <div>
+      <h5>蛙泳十课</h5>
+      <p>一份以蛙泳为主线的零基础训练计划：6 个阶段、10 次课、每课一条达标线。<br>动作要点参考公开教学资料与 GB/T 44098—2024，训练量按成人业余初学安排。</p>
+    </div>
+    <div>
+      <h5>页面导航</h5>
+      <a href="#overview">全景图</a>
+      <a href="#plan">10 次课计划</a>
+      <a href="#tech">技术流程</a>
+      <a href="#safety">安全自救</a>
+    </div>
+    <div>
+      <h5>安全声明</h5>
+      <p>本页内容不能替代专业教练与救生员。初学请在有救生员的浅水区进行，<b style="color:#cfe4e9">不要独自进入深水区</b>。</p>
+    </div>
+  </div>
+  <div class="foot-base">
+    <span>照片来源 Pexels · 仅作教学示意</span>
+    <span>结构：HTML / CSS / JS 分离</span>
+  </div>
+</footer>
+
+<button id="totop" type="button" aria-label="回到顶部">↑</button>
+<script src="assets/js/swim.js" defer></script>
+</body>
+</html>
