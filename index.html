@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>页面导航 · Index</title>
+<meta name="description" content="站内所有页面的统一入口：搜索、分类、一键进入。">
+<link rel="stylesheet" href="assets/css/home.css">
+</head>
+<body>
+
+<!-- ============ 顶栏 ============ -->
+<header class="topbar">
+  <div class="topbar-in">
+    <a class="brand" href="./">
+      <span class="brand-dot" aria-hidden="true"></span>
+      <span class="brand-txt">INDEX</span>
+    </a>
+
+    <div class="search">
+      <label class="sr-only" for="q">搜索页面</label>
+      <input id="q" type="search" placeholder="搜索页面名称或关键词　/　按 / 聚焦" autocomplete="off" spellcheck="false">
+    </div>
+
+    <span class="count" id="count">共 0 个页面</span>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <!-- ============ 首屏 ============ -->
+  <section class="hero">
+    <p class="kicker">SITE INDEX <i>/</i> 页面总览</p>
+    <h1>所有页面，<em>一处进入</em></h1>
+    <p class="lede">
+      这里收录站内的全部页面。页面变多之后，靠搜索和分类找，不必记文件名。
+    </p>
+    <div class="hero-acts" id="acts"></div>
+    <div class="hero-meta" id="meta"></div>
+  </section>
+
+  <!-- ============ 分类筛选（仅当分类 > 1 时出现） ============ -->
+  <nav class="chips" id="chips" aria-label="按分类筛选"></nav>
+
+  <!-- ============ 页面卡片 ============ -->
+  <section class="grid" id="grid" aria-label="页面列表"></section>
+
+  <div class="empty" id="empty" hidden>
+    <p class="empty-t">没有匹配的页面</p>
+    <p class="empty-s">换个关键词，或清空搜索看全部。</p>
+    <button type="button" class="btn-ghost" id="clear">清空搜索</button>
+  </div>
+
+</main>
+
+<footer class="foot">
+  <p>
+    新增页面：在 <code>assets/js/home.js</code> 顶部的 <code>PAGES</code> 数组里加一条即可，
+    封面图放到 <code>assets/</code> 下；没有封面会自动用编号占位。
+  </p>
+</footer>
+
+<noscript>
+  <p style="text-align:center;padding:24px;font-size:14px">
+    此页需要启用 JavaScript 才能渲染页面列表。
+  </p>
+</noscript>
+
+<script src="assets/js/home.js"></script>
+</body>
+</html>
